@@ -1,0 +1,104 @@
+
+java -cp ./libs/*:TextModeler.jar edu.utep.cs.NSFDataProcessor.RawDataProcessor_Step1 Awards_IIS_2006to20013.txt
+Output directory: Documents   This will store all the titles and the descriptions. The file name is the award number.
+
+java -Xms15000m -cp ../libs/lingpipe-4.0.1.jar:../libs/opennlp-tools-1.3.0.jar:../libs/maxent-2.4.0.jar:../libs/trove.jar:../libs/jsoup-1.7.3.jar:../libs/LBJPOS.jar:../libs/LBJ2Library.jar:../libs/jwnl.jar:../libs/commons-logging-1.1.1.jar:TextModeler.jar edu.utep.cs.EntityGenerator.MemoryEfficientEntityExtractionFromAFolderOfDoc /home/dalstudent/Desktop/wikidata/parallel/wikiTextFromPage
+
+Change the filename tfFile.txt to tfFile_original.txt
+
+java -Xms1000m -cp TextModeler.jar edu.vt.cs.shahriar.Modeller.Process ntc tfFile_original.txt weightedTermFile_original.txt
+Input file: tfFile_original.txt
+Output file: weightedTermFile_original.txt
+Running.........
+Total Docs:2793
+Constructing new file: weightedTermFile_original.txt
+ 
+java -cp TextModeler.jar -Xms1000m edu.vt.cs.shahriar.Modeller.TFIDFFiltration tfFile_original.txt weightedTermFile_original.txt tfFile.txt 0.1
+tfInputFile: tfFile_original.txt
+weightedTermHTFile: weightedTermFile_original.txt
+tfNewFile: tfFile.txt
+threshold: 0.0
+Total documents: 2793
+Total terms: 35227
+
+
+
+java -Xms1000m -cp TextModeler.jar edu.vt.cs.shahriar.Modeller.Process ntc tfFile.txt weightedTermFile.txt
+Input file: tfFile.txt
+Output file: weightedTermFile.txt
+Running.........
+Total Docs:2793
+Constructing new file: weightedTermFile.txt
+
+
+java -Xms1000m -cp TextModeler.jar edu.utep.cs.NSFDataProcessor.GenerateAwardIDTermIDAndMatrix weightedTermFile.txt
+Read complete: weightedTermFile.txt
+2793                   
+Complete.... Generated docVsIDFile.txt, idVsDocFile.txt, termVsIDFile.txt, IDVstermFile.txt, and MarixFormOf_weightedTermFile.txt
+
+
+Copy the following files in Matlab
+cp docVsIDFile.txt /Users/shahriar/Dropbox/NSF_Awards_Data/Runner_in_Matlab/dataFilesForMatlab/docVsIDFile.txt 
+cp idVsDocFile.txt /Users/shahriar/Dropbox/NSF_Awards_Data/Runner_in_Matlab/dataFilesForMatlab/idVsDocFile.txt
+cp IDVstermFile.txt /Users/shahriar/Dropbox/NSF_Awards_Data/Runner_in_Matlab/dataFilesForMatlab/IDVstermFile.txt
+cp MarixFormOf_weightedTermFile.txt /Users/shahriar/Dropbox/NSF_Awards_Data/Runner_in_Matlab/dataFilesForMatlab/MarixFormOf_weightedTermFile.txt
+cp termVsIDFile.txt /Users/shahriar/Dropbox/NSF_Awards_Data/Runner_in_Matlab/dataFilesForMatlab/termVsIDFile.txt
+cp tfFile.txt /Users/shahriar/Dropbox/NSF_Awards_Data/Runner_in_Matlab/dataFilesForMatlab/tfFile.txt
+cp weightedTermFile.txt /Users/shahriar/Dropbox/NSF_Awards_Data/Runner_in_Matlab/dataFilesForMatlab/weightedTermFile.txt
+
+
+------------------
+
+All the class files are packaged in TextModeler.jar. TextModeler\runner_Atlantic contains sample data files and all necessary files. The directory TextModeler contains the source codes. For testing purpose run the following commands from the directory: TextModeler\runner_Atlantic.
+
+STEP 1: 
+java -cp ./lib/*;TextModeler.jar edu.vt.cs.shahriar.GeneralData.prepareTFFile processedDir tfFile_original.txt
+It assumes that all your files are in the directory named processedDir. 
+The program would generate a file with term frequencies in tfFile_original.txt..
+
+STEP 2:
+java -cp ./lib/*;TextModeler.jar edu.vt.cs.shahriar.Modeller.Process ntc tfFile_original.txt weightedTermFile_original.txt
+Now you are producing the model file. This would use TFIDF modeling with cosine normalization. From the tfFile_original.txt file it would generate weightedTermFile_original.txt.
+
+I am sure at this moment you have lots of unimportant terms in your modeled file. To remove these bad terms, use STEP 3.
+
+STEP 3:
+java -cp ./lib/*;TextModeler.jar edu.vt.cs.shahriar.Modeller.TFIDFFiltration tfFile_original.txt weightedTermFile_original.txt tfFile.txt 0.08
+This would remove any term that has lesser weight than 0.08. Make it large to remove more and more terms. Now you have a new file named tfFile.txt. It should contains the term frequencies of the good terms. You have to do a remodeling of the entire weights with this new file.
+	
+STEP 4:
+java -cp ./lib/*;TextModeler.jar edu.vt.cs.shahriar.Modeller.Process ntc tfFile.txt weightedTermFile.txt
+It would produce weightedTermFile.txt. This is your final model file.
+	
+Now it is time to produce the concept lattice. Before that you need a binary matrix. Produce that using the following command.
+STEP 5:
+java -cp TextModeler.jar -Xms1500m -Xmx2000m edu.vt.cs.shahriar.Modeller.IBMFormatConverter
+This would produced FullDataSetIBM.txt, termIDHT.txt and docIDHT.txt
+
+Now run CHARM-L:
+STEP 6:
+a.exe -i FullDataSetIBM.txt -s 0.02 -l -L -o cpplattice.txt -n	
+This is another critical step. The support -s 0.02 should be determined based on some trial and errors. For very large datasets, I generally increase it. For small datasets I keep it small. Note that if your dataset is very large, if you set the support to low, it would take hours to compute the lattice. 
+
+STEP 7: HOW TO USE THE API:
+The API assumes that you have completed all the previous six steps.
+There is a program named YourProgram3.java which shows how to use our storytelling API.
+
+Note that YourProgram3.java is not a part of the package. It just shows how to use the API from your program. Compile it using the following command.
+javac -cp ./lib/*;TextModeler.jar YourProgram3.java
+
+Run YourProgram3 using the following command:
+java -cp ./lib/*;TextModeler.jar;. YourProgram3
+YourProgram3.java is documented so that the calls to the functions are clear.
+
+If you have large dataset, please incerase memory allocation to JVM using -Xms and -Xmx parameter in all the java command lines. For the sample above, you will not need large memory.
+
+
+
+
+
+
+
+
+
+M. Shahriar Hossain

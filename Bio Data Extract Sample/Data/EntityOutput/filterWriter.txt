@@ -1,0 +1,41 @@
+
+ 29520098 Total Entity: 47
+Enitity after Filtering: 4
+ 29504907 Total Entity: 60
+Enitity after Filtering: 2
+ 29516572 Total Entity: 39
+Enitity after Filtering: 7
+ 29492201 Total Entity: 85
+Enitity after Filtering: 3
+ 29464044 Total Entity: 50
+Enitity after Filtering: 6
+ 29487692 Total Entity: 61
+Enitity after Filtering: 6
+ 29484415 Total Entity: 47
+Enitity after Filtering: 5
+ 29509056 Total Entity: 15
+Enitity after Filtering: 1
+ 29541204 Total Entity: 34
+Enitity after Filtering: 2
+ 29475040 Total Entity: 21
+Enitity after Filtering: 0
+ 29470046 Total Entity: 38
+Enitity after Filtering: 10
+ 29523788 Total Entity: 24
+Enitity after Filtering: 2
+ 29463261 Total Entity: 43
+Enitity after Filtering: 5
+ 29466611 Total Entity: 32
+Enitity after Filtering: 2
+ 29468140 Total Entity: 33
+Enitity after Filtering: 2
+ 29463470 Total Entity: 50
+Enitity after Filtering: 2
+ 29502308 Total Entity: 21
+Enitity after Filtering: 0
+ 29515400 Total Entity: 36
+Enitity after Filtering: 2
+ 29459713 Total Entity: 24
+Enitity after Filtering: 3
+ 29534029 Total Entity: 40
+Enitity after Filtering: 0

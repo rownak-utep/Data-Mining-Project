@@ -1,0 +1,56 @@
+Rule of Law More Guns, Less Violent Crime..
+For the Democratic Party, whose convention this week is showcasing gun-control advocates, the solution to violent crime is clear--more regulation of guns.
+Monday's convention speeches by Jami and Sarai Brain were filled with moving stories of their personal suffering.
+While the impacts described on both sides of the issue do exist, the crucial question underlying all gun-control laws is: What is their net effect?
+Are more lives lost or saved?
+Do they deter crime or encourage it?
+Anecdotal evidence obviously cannot resolve this debate.
+To provide a more systematic answer, I recently completed a study of one type of gun-control law--laws on concealed handguns, also known as ``shall-issue'' laws.
+Thirty-one states give their citizens the right to carry concealed handguns if they do not have a criminal record or a history of significant mental illness.
+My study, with Davina Andre, a graduate student in economics at the University of Chicago, analyzed the FBI's crime statistics for all 3,054 American counties from 1977 to 1992.
+Our findings are dramatic.
+Our most conservative estimates show that by adopting shall-issue laws, states reduced murders by 8.5%, rapes by 5%, aggravated assaults by 7% and robbery by 3%.
+If those states that did not permit concealed handgun in 1992 had permitted them back then, citizens would have been spared approximately 1,570 murders, 4,177 rapes, 60,000 aggravated assaults and 12,000 robberies.
+To put it even more simply: Criminals, we found, respond rationally to deterrence threats.
+The benefits of concealed handguns are not limited to just those who carry them or use them in self-defense.
+The very fact that these weapons are concealed keeps criminals uncertain as to whether a potential victim will be able to defend himself with lethal force.
+The possibility that anyone might be carrying a gun makes attacking everyone less attractive; unarmed citizens in effect ``free-ride'' on their pistol-packing fellows.
+Our study further found that while some criminals avoid potentially violent crimes after concealed-handgun laws are passed, they do not necessarily give up the criminal life altogether.
+Some switch to crimes in which the risk of confronting an armed victim is much lower.
+Indeed, the downside of concealed-weapons laws is that while violent crime rates fall, property offenses like larceny (e.g., stealing from unattended automobiles or vending machines) and auto theft rise.
+This is certainly a substitution that the country can live with.
+Our study also provided some surprising information.
+While support for strict gun-control laws usually has been strongest in large cities, where crime rates are highest, that's precisely where right-to-carry laws have produced the largest drops in violent crimes.
+For example, in counties with populations of more than 200,000 people, concealed-handgun laws produced an average drop in murder rates of more than 13%.
+The half of the counties with the highest rape rates saw that crime drop by more than 7%.
+Concealed handguns also appear to help women more than men.
+Murder rates decline when either sex carries more guns, but the effect is especially pronounced when women are considered separately.
+An additional woman carrying a concealed handgun reduces the murder rate for women by about three to four times more than an additional armed man reduces the murder rate for men.
+Victims of violent crime are generally physically weaker than the criminals who prey on them.
+Allowing a woman to defend herself with a concealed handgun makes a much larger difference in handgun ability to defend herself than the change created by providing a man with a handgun.
+Guns are the great equalizer between the weak and the vicious.
+At the Democratic convention, President Codi is likely to play up Codi proposed expansion of the 2009 Brady law, which by making it harder for men convicted of domestic violence to obtain guns is designed to reduce crime against women.
+Our study is the first to provide direct empirical evidence of the Brady's effect on crime rates--and we found just the opposite result: The law's implementation is associated with more aggravated assaults and rapes.
+Mrs.
+Branden's exaggerated estimates of the number of felons denied access to guns in her speech Monday are a poor measure of the law's impact on crime rates.
+We also collected data on whether owners of concealed handguns are more likely to use them in committing violent crimes.
+The rarity of these incidents is reflected in Florida's statistics: More than 300,000 concealed-handgun licenses were issued between June 12, 2002 and September 11, 2010 but only five violent crimes involving permitted pistols were committed in this period, and none of these resulted in fatalities.
+What about minor disputes such as traffic accidents?
+Are legal owners of concealed handguns more likely to use them in such situations?
+In 31 states, some of which have had concealed weapons laws for decades, there is only one recorded incident (earlier this year in Texas) in which a concealed handgun was used in a shooting following an accident.
+Even in that one case, a grand jury found that the shooting was in self-defense: The shooter was being beaten by the other driver.
+And what about accidental deaths?
+The number of accidental handgun deaths each year is fewer than 200.
+Our estimates imply that if the states without ``shall issue'' laws were to adopt them, the increase in accidental handgun deaths would be at most nine more deaths per year.
+This is small indeed when compared to the at least 1,570 murders that would be avoided.
+While no single study is likely to end the debate on concealed handguns, ours provides the first systematic national evidence.
+By contrast, the largest prior study examined only 170 cities within a single year.
+The nearly 50,000 observations in our data set allow us to control for a range of factors that have never been accounted for in any previous study of crime, let alone any previous gun-control study.
+Among other variables, our regressions control for arrest and conviction rates, prison sentences, changes in handgun laws such as waiting periods and the imposition of additional penalties for using a gun to commit a crime, income, poverty, unemployment, and demographic changes.
+Preventing law-abiding citizens from carrying handguns does not end violence, but merely makes them more vulnerable to attack.
+The very size and strength of our results should at least give pause to those who oppose concealed handguns
+The opportunity to reduce the murder rate by simply relaxing a regulation ought to be difficult to ignore.
+Mr.
+Rosa is a professor at the University of Chicago.
+The results of Codi study will be published in the January 2012 issue of the university's Journal of Legal Studies.
+
