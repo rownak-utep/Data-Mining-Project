@@ -1,2 +1,9 @@
-Bio Data Extract sample: java project to extract biological entities from pubmed abstract
-Contextual Embedding Bio Data: Python program to generate word2vec- distributed representation of biological entities.
+Description of each folder:
+
+1. Data Collection: Collect pubmed abstracts and other functional annotations using xml file.
+2. Bio Data Extract sample: java project to extract biological entities from pubmed abstract
+3. Contextual Embedding Bio Data: Python program to generate word2vec- distributed representation of biological entities.
+
+Steps to run the program:
+1. download the .xml file of the abstracts from pubmed
+2. run xmlParseBioPython.py located at Data Collection Folder (instructions are given in readme file inside Data collection folder)
